@@ -1,0 +1,284 @@
+
+
+.main{
+	width: 100%;
+	margin:30px auto;
+}
+
+
+.title{
+	width: 100%;
+	height: 43px;
+	/*background: blue;*/
+	border-bottom: 2px solid #27AE60;
+}
+
+.title_text{
+	height: 100%;
+	width: 1200px;
+	margin:0 auto;
+}
+
+.nav{
+	height: 100%;
+	width: 800px;
+	/*background: red;*/
+	margin-left: 20px;
+	text-align: left;
+	line-height: 43px;
+	font-size: 13px;
+	color: #196F3D;
+}
+
+.nav a{
+	color: #196F3D;
+}
+
+.nav a:hover{
+	color: #f40;
+}
+
+
+.text{
+	height: 100%;
+	width: 200px;
+	color: #fff;
+	background: #1E8449;
+	text-align: center;
+	font-size: 16px;
+	line-height: 43px;
+}
+
+.commodity{
+	width: 1200px;
+	height: 500px;
+	margin:0 auto;
+	/*background: green;*/
+}
+
+.commodityPic{
+	width: 40%;
+	height: 100%;
+	/*background: blue;*/
+}
+
+.commodityInfos{
+	width: 60%;
+	height: 100%;
+	/*background: red;*/
+}
+
+.picStyle{
+	height: 400px;
+	width: 400px;
+	margin:50px auto;
+	/*background: green;*/
+	border:2px solid #99A3A4;
+	position: relative;
+	transform-style: preserve-3d;
+	transform: perspective(800px) rotateY(0deg);
+}
+
+.picture,.words{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 400px;
+	width: 400px;
+	text-align: center;
+	/*line-height: 400px;*/
+	font-size: 14px;
+	backface-visibility: hidden;
+	transition: all 0.8s linear;
+	transform: perspective(800px) rotateY(0deg);
+}
+
+
+.words{
+	padding: 10px;
+	height: 380px;
+	width: 380px;
+	background: #D5F5E3;
+	color: #1E8449;
+	transform: translateZ(2px) rotateY(180deg);
+}
+
+
+.picStyle:hover .picture{
+	transform: perspective(800px) rotateY(180deg);
+}
+
+.picStyle:hover .words{
+	transform: perspective(800px) rotateY(0deg);
+}
+
+.infosStyle{
+	height: 400px;
+	width:100%;
+	margin:50px auto;
+	/*background: red;*/
+}
+
+.infosStyle .commodityTitle{
+	height: 40px;
+	width: 100%;
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+.priceBox{
+	height: 100px;
+	width: 720px;
+	background: #E5E8E8;
+}
+
+.price{
+	display: inline-block;
+	height: 60px;
+	width: 500px;
+	margin: 20px 20px;
+	/*background: green;*/
+	color: #6c6c6c;
+	font-size: 13px;
+}
+
+.customary{
+	height: 40%;
+	line-height: 24px;
+}
+
+S{
+	font-size: 17px;
+	color: #000;
+}
+
+.current{
+	height: 60%;
+	width: 300px;
+	line-height: 36px;
+}
+
+.current h1{
+	display: inline-block;
+	font-size: 30px;
+	color: #f42424;
+}
+
+.salesVolume{
+	display: inline-block;
+	/*background: red;*/
+	/*line-height: 100px;*/
+	height: 20px;
+	width: 150px;
+	position: relative;
+	bottom: 30px;
+	color: #6c6c6c;
+}
+
+.salesVolume span{
+	color: #b31919;
+}
+
+.buyInfos{
+	margin-top: 10px;
+	margin-left: 20px;
+	height: 160px;
+	width: 80%;
+	color: #6c6c6c;
+	font-size: 13px;
+	/*background: red;*/
+}
+
+.buyInfos span{
+	color: #b31919;
+}
+
+.server{
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+}
+
+.number{
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+}
+
+.number text{
+	height: 40px;
+	float: left;
+	line-height: 40px;
+}
+
+.number button{
+	position: relative;
+	top: 5px;
+	height: 32px;
+	width: 32px;
+	padding:0;
+	border:1px solid #99A3A4;
+	background: #E5E8E8;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bolder;
+	float: left;
+	outline: none;
+}
+
+.number input{
+	position: relative;
+	top: 5px;
+	width: 40px;
+	height: 30px;
+	border-top: 1px solid #99A3A4;
+	border-bottom: 1px solid #99A3A4;
+	border-left: 0;
+	border-right: 0;
+	outline:none;
+	text-align: center;
+	float: left;
+}
+
+.number input::-webkit-outer-spin-button,
+.number input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.number input[type="number"]{
+  -moz-appearance: textfield;
+}
+
+.buy{
+	height: 40px;
+	width: 80%;
+	margin-left: 20px;
+}
+
+.now{
+	height: 100%;
+	width: 150px;
+	color: #E5511D;
+    border-color: #F0CAB6;
+    background: #FFE4D0;
+    cursor:pointer;
+}
+
+.now:hover{
+	background: #EDBB99;
+}
+
+.cart{
+	height: 100%;
+	width: 200px;
+	color: #FFF;
+    border-color: #F40;
+    background: #F40;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.cart:hover{
+	background: #D35400;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>特产分类</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/class.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/template-web.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<script type="text/javascript" src="js/class.js"></script>
+</head>
+<body>
+	<div class="container">
+
+		<div class="header">
+			<div class="headerBox"></div>
+			<div class="searchContainer">
+				<div class="logo fl">
+					<a href="index.html"></a>
+				</div>
+				<div class="search fr">
+					<div class="searchIcon fl">
+						<img src="images/icon/search.png">
+					</div>
+
+					<div class="searchBody fl">
+						<form>
+							<input type="text" name="keyword" class="input fl" placeholder="请输入要搜索的特产名称">
+							<input type="submit" name="" class="submit fr" value="搜特产" id="search">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="main">
+			<div class="title">
+				<div class="title_text">
+					<div class="text fl"></div>
+					<div class="nav fl">
+						<a href="index.html">首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<a href="class.html?clsid=1">零食类特产</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<a href="class.html?clsid=2">水果类特产</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<a href="class.html?clsid=3">小吃类特产</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<a href="class.html?clsid=4">手工类特产</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<a href="class.html?clsid=5">其他类特产</a>
+					</div>
+				</div>
+			</div>
+			<div class="commodityBox">
+				<ul></ul>
+			</div>
+
+<!-- 			<div class="pagenation">
+				<a href="#"><上一页</a>
+				<a href="#" class="active">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">下一页></a>
+			</div> -->
+		</div>
+
+		<div class="footer">
+			<div class="foot_link">
+				<a href="#">关于我们</a>
+				<span>|</span>
+				<a href="#">联系我们</a>
+				<span>|</span>
+				<a href="#">招聘人才</a>
+				<span>|</span>
+				<a href="#">友情链接</a>		
+			</div>
+			<p>CopyRight © 2016 16嵌入式2毕业设计 All Rights Reserved</p>
+			<p>电话：010-****888    粤ICP备*******8号</p>
+		</div>
+
+<script type="text/html" id="notLogin">
+	<div class="headConnent">
+		<div class="wecome fl">欢迎来到河源特产网！</div>
+		<div class="infos fr">
+			<a class="index fl" href="./index.html">特产网首页</a>
+			<div class="login fl">
+				请&nbsp;&nbsp;
+				<span><a href="./login.html">登陆</a></span>
+				&nbsp;&nbsp;或&nbsp;&nbsp;
+				<span><a href="./register.html">注册</a></span>
+			</div>
+			&nbsp;&nbsp;
+			<a href="login.html">个人中心</a>
+			&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="login.html">我的购物车</a>
+			&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="login.html">我的订单</a>
+		</div>
+	</div>
+</script>
+
+<script type="text/html" id="alreadyLogin">
+			<div class="headConnent">
+				<div class="wecome fl">欢迎来到河源特产网！</div>
+				<div class="infos fr">
+					<a class="index fl" href="./index.html">特产网首页</a>
+					<div class="login fl">
+						欢迎你:&nbsp;&nbsp;<span><a href="./user.html"><%= name %></a></span>
+					</div>
+					<a href="#" id="logout" onclick="logout();">注销</a>
+					&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="user.html">个人中心</a>
+					&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="cart.html">我的购物车</a>
+					&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="order.html">我的订单</a>
+				</div>
+			</div>
+</script>
+
+</body>
+</html>

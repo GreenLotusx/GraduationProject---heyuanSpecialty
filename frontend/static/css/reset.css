@@ -1,0 +1,63 @@
+/*标签默认样式重置*/
+
+/*去除间距*/
+body,ul,p,h1,h2,h3,h4,h5,h6,dl,dd,input,select,form{
+	margin: 0;
+	padding: 0;
+}
+
+/*让h标签继承body内设置的字体大小*/
+h1,h2,h3,h4,h5,h6{
+	font-size: 100%;
+	font-weight: normal;
+}
+
+
+/*去除默认圆点*/
+ul{
+	list-style: none;
+}
+
+/*去除倾斜*/
+em{
+	font-style: normal;
+}
+
+/*去除下划线*/
+a{
+	text-decoration: none;
+}
+
+/*去掉IE下，图片做链接会出现默认边框*/
+img{
+	border: none;
+}
+
+/*清除浮动或者margin-top塌陷*/
+.clearfix::before,.clearfix::after{
+    content:"";
+    display:table;
+  }
+.clearfix::after{
+    clear:both;
+  }
+ .clearfix{
+    zoom:1;
+ }
+
+
+.fl{
+	float: left;
+}
+
+.fr{
+	float: right;
+}
+
+.visible{
+	display: block;
+}
+
+.invisible{
+	display: none;
+}

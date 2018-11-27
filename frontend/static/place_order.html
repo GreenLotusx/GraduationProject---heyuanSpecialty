@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>提交订单</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/place_order.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/template-web.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<script type="text/javascript" src="js/place_order.js"></script>
+</head>
+<body>
+
+	
+		<div class="header">
+			<div class="headerBox"></div>
+			<div class="searchContainer">
+				<div class="logo fl">
+					<a href="index.html"></a>
+				</div>
+				<div class="search fr">
+					<div class="searchIcon fl">
+						<img src="images/icon/search.png">
+					</div>
+
+					<div class="searchBody fl">
+						<form>
+							<input type="text" name="keyword" class="input fl" placeholder="请输入要搜索的特产名称">
+							<input type="submit" name="" class="submit fr" value="搜特产" id="search">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="main">
+			<h3 class="common_title">确认收货地址</h3>
+
+			<div class="common_list_con clearfix">
+				<dl>
+					<dt>寄送到：</dt>
+					<dd id="address"><input type="radio" name="" checked=""></dd>
+				</dl>
+				<a href="user.html" class="edit_site">编辑收货地址</a>
+
+			</div>
+			
+			<h3 class="common_title">支付方式</h3>	
+			<div class="common_list_con clearfix">
+				<div class="pay_style_con clearfix">
+					<input type="radio" name="pay_style" checked>
+					<label class="cash">货到付款</label>
+					<input type="radio" name="pay_style">
+					<label class="weixin">微信支付</label>
+					<input type="radio" name="pay_style">
+					<label class="zhifubao"></label>
+					<input type="radio" name="pay_style">
+					<label class="bank">银行卡支付</label>
+				</div>
+			</div>
+
+			<h3 class="common_title">商品列表</h3>
+			
+			<div class="common_list_con clearfix">
+				<ul class="goods_list_th clearfix">
+					<li class="col01">商品信息</li>
+					<li class="col02">商品运费</li>
+					<li class="col03">商品价格</li>
+					<li class="col04">数量</li>
+					<li class="col05">小计</li>		
+				</ul>
+
+			</div>
+
+			<h3 class="common_title">总金额结算</h3>
+
+			<div class="common_list_con clearfix">
+				<div class="settle_con">
+					<div class="total_goods_count">共<em></em>件商品，总金额<b>元</b></div>
+					<div class="transit">运费：<b>元</b></div>
+					<div class="total_pay">实付款：<b>元</b></div>
+				</div>
+			</div>
+
+			<div class="order_submit clearfix">
+				<a href="javascript:;" id="order_btn">确认订单</a>
+			</div>
+		</div>
+
+		
+
+		<div class="footer">
+			<div class="foot_link">
+				<a href="#">关于我们</a>
+				<span>|</span>
+				<a href="#">联系我们</a>
+				<span>|</span>
+				<a href="#">招聘人才</a>
+				<span>|</span>
+				<a href="#">友情链接</a>		
+			</div>
+			<p>CopyRight © 2016 16嵌入式2毕业设计 All Rights Reserved</p>
+			<p>电话：010-****888    粤ICP备*******8号</p>
+		</div>
+
+	<div class="popup_con">
+		<div class="popup">
+			<p></p>
+		</div>
+		
+		<div class="mask"></div>
+	</div>
+
+
+<script type="text/html" id="notLogin">
+	<div class="headConnent">
+		<div class="wecome fl">欢迎来到河源特产网！</div>
+		<div class="infos fr">
+			<a class="index fl" href="./index.html">特产网首页</a>
+			<div class="login fl">
+				请&nbsp;&nbsp;
+				<span><a href="./login.html">登陆</a></span>
+				&nbsp;&nbsp;或&nbsp;&nbsp;
+				<span><a href="./register.html">注册</a></span>
+			</div>
+			&nbsp;&nbsp;
+			<a href="login.html">个人中心</a>
+			&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="login.html">我的购物车</a>
+			&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="login.html">我的订单</a>
+		</div>
+	</div>
+</script>
+
+<script type="text/html" id="alreadyLogin">
+			<div class="headConnent">
+				<div class="wecome fl">欢迎来到河源特产网！</div>
+				<div class="infos fr">
+					<a class="index fl" href="./index.html">特产网首页</a>
+					<div class="login fl">
+						欢迎你:&nbsp;&nbsp;<span><a href="./user.html"><%= name %></a></span>
+					</div>
+					<a href="#" id="logout" onclick="logout();">注销</a>
+					&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="user.html">个人中心</a>
+					&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="cart.html">我的购物车</a>
+					&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="order.html">我的订单</a>
+				</div>
+			</div>
+</script>
+
+
+<script type="text/html" id="ordList">
+	{{each ordList item index}}
+		<ul class="goods_list_td clearfix">
+			<li class="col01">{{index + 1}}</li>			
+			<li class="col02"><img src="{{item.img}}"></li>
+			<li class="col03">{{item.title}}</li>
+			<li class="col04">{{item.freight}}元</li>
+			<li class="col05">{{item.price}}元/{{item.specifications}}</li>
+			<li class="col06">{{item.num}}</li>
+			<li class="col07">{{item.sprice}}元</li>	
+		</ul>
+	{{/each}}
+</script>
+
+
+</body>
+</html>

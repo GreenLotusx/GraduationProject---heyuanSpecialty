@@ -1,0 +1,212 @@
+*{
+  margin:0;
+  padding:0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+input::-ms-clear{display: none;}
+
+html,body{
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  font-family: 微软雅黑, "microsoft yahei", Tahoma, Verdana;
+  background: #F5EEF8;
+	min-height: 100%;
+  height: 100%;
+	min-width: 1200px;
+}
+
+.connent{
+  height: 100%;
+  width: 100%;
+  background: #F5EEF8;
+}
+
+.connent img{
+  display: inline-block;
+  position: fixed;
+  right: 0;
+  height: 40%;
+  width: 40%;
+  margin: 3.5% 5% 0 0;
+}
+
+.main{
+  height: 650px;
+  width: 800px;
+  margin:30px auto 0;
+  background: #D5D8DC;
+}
+
+.main form{
+  height: 100%;
+  width: 100%;
+  background: #FAFBFC;
+}
+
+.header{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 25px;
+  color: #196F3D;
+  text-align: center;
+  background: #f3f3f3
+}
+
+
+.contentForm{
+  width: 70%;
+  height: 420px;
+  margin-top: 20px;
+}
+
+.contentForm input{
+  height: 32px;
+  border: 1px solid #ccc;
+}
+
+
+.contentText{
+  width: 30%;
+  height: 420px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #999;
+}
+
+.contentText ul{
+  height: 80%;
+  width: 90%;
+  margin:5%;
+}
+
+.contentText li{
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+
+.main span{
+  display: inline-block;
+  width: 100px;
+  margin-left: 20px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.submit{
+  display: block;
+  width: 150px;
+  height: 40px;
+  background: #7F8C8D;
+  border-radius: 5px;
+  margin:0 auto;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #99A3A4;
+  margin-top: 20px;
+}
+
+.title input{
+  width: 400px;
+}
+
+.infos{
+  height: 100px;
+  line-height: 100px;
+}
+
+.infos span{
+  height: 100%;
+  line-height: 100px;
+  vertical-align: top;
+}
+
+.infos textarea{
+  width: 400px;
+  height: 90%;
+  font-size: 15px;
+  border: 1px solid #ccc;;
+}
+
+.price{
+  height: 50px;
+  width: 100%;
+  /*background: blue;*/
+}
+
+.price input{
+  width: 15%;
+}
+
+/*.price span{
+  width: 20%;
+  margin-left: 5%;
+}*/
+
+#newprice,#freight{
+  display: inline-block;
+  width: 10%;
+  margin-left: 10px;
+  /*background: green;*/
+}
+
+/*#test{
+  width: 15%;
+}*/
+
+#freight input{
+  width: 15%;
+}
+
+.pic_class select{
+  width: 100px;
+  height: 32px;
+  border: 1px solid #ccc;
+}
+
+
+.pic_position input{
+  width: 380px;
+}
+
+.pic_file input{
+  width: 300px;
+  cursor: pointer;
+  border:none;
+}
+
+.sales input{
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+
+#specifications{
+  width: 100px;
+  height: 32px;
+}
+
+.preview{
+  height: 150px;
+  width: 100%;
+  /*background: green;*/
+  position: relative;
+}
+
+.preview img{
+  position: absolute;
+  margin:0;
+  border:none;
+  margin-top: 10px;
+  left: 190px;
+  height: 130px;
+  width: 200px;
+  float: right;
+}

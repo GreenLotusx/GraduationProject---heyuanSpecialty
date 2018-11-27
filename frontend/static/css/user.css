@@ -1,0 +1,307 @@
+html,body{
+	min-height: 100%;
+	width: 100%;
+	color: #666;
+}
+
+.container{
+	height: 100%;
+	width: 100%;
+	min-width: 1200px;
+	min-height: 600px;
+	background: #F2F3F4;
+	/*background: green;*/
+}
+
+
+.main{
+	/*height: 800px;*/
+	width: 1200px;
+	/*background: blue;*/
+	margin:0 auto;
+	margin:30px auto;
+}
+
+
+.title{
+	height: 40px;
+	width: 100%;
+	font-weight: bold;
+	line-height: 40px;
+	border-bottom: 2px solid green;
+	margin-bottom: 1px;
+}
+
+.userText{
+	font-size: 20px;
+	color: green;
+}
+
+.body{
+	height: 500px;
+	width: 100%;
+	margin-top: 30px;
+	/*background: blue;*/
+}
+
+.body_left{
+	height: 100%;
+	width: 20%;
+	/*background: green;*/
+}
+
+.body_left img{
+	height: 120px;
+	width: 120px;
+	margin:30px 60px 20px 60px;
+	border-radius: 5px;
+	/*background: red;*/
+}
+
+.body_left_bootom{
+	height: 300px;
+	width: 100%;
+	/*background: yellow;*/
+	color: #f40;
+	text-align: center;
+	font-size: 18px;
+}
+
+.body_left_bootom li{
+	font-size: 14px;
+	margin-top: 10px;
+	color: #000;
+	cursor: pointer;
+}
+
+.body_left_bootom .select{
+	color: #f40;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.body_left_bootom li:hover{
+	color: #f40;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.body_right_user_infos{
+	width: 79%;
+	height: 100%;
+	/*background: red;*/
+	border:1px solid #BFC9CA;
+}
+
+.body_right_user_psd{
+	width: 79%;
+	height: 100%;
+	/*background: blue;*/
+	/*background: red;*/
+	border:1px solid #BFC9CA;
+}
+
+.body_right_user_address{
+	width: 79%;
+	height: 100%;
+	/*background: red;*/
+	/*background: red;*/
+	border:1px solid #BFC9CA;
+}
+
+.user_infos_title{
+	height: 35px;
+	width: 100%;
+	font-size: 14px;
+	border-bottom: 1px solid #BFC9CA;
+	/*background: green;*/
+}
+
+.user_infos_title div{
+	width: 100px;
+	height: 100%;
+	/*background: red;*/
+	text-align: center;
+	line-height: 35px;
+	color: #666;
+    font-weight: 700;
+}
+
+.user_infos_body{
+	height: 350px;
+	width: 80%;
+	margin: 30px 0 0 40px;
+	border-bottom: 1px solid #BFC9CA;
+	/*background: blue;*/
+}
+
+.address_body{
+	height: 380px;
+	/*background: blue;*/
+}
+
+.now_address{
+	height: 70px;
+	width: 100%;
+	background: #f9f9f9;
+}
+
+.nowAddressTitle{
+	height: 40px;
+	line-height: 40px;
+	margin-left: 20px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.nowAddressBody{
+	height: 30px;
+	line-height: 30px;
+	margin-left: 20px;
+	font-size: 14px;
+}
+
+.update_address{
+	height: 290px;
+	/*background: blue;*/
+	width: 100%;
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+.update_address_body{
+	height: 260px;
+	width: 100%;
+	background: #f9f9f9;
+}
+
+.form_group{
+	height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    /*background: red;*/
+}
+
+.form_group2{
+	height: 80px;
+    line-height: 40px;
+    margin-top: 10px;
+    /*background: red;*/
+}
+
+.form_group label,.form_group2 label{
+    width: 100px;
+    float: left;
+    text-align: right;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.form_group2 .address_text{
+	width: 280px;
+	height: 60px;
+    border: 1px solid #ddd;
+    outline: none;
+    padding: 10px;
+}
+
+.form_group input{
+	width: 300px;
+    height: 25px;
+    border: 1px solid #ddd;
+    float: left;
+    outline: none;
+    margin-top: 7px;
+    text-indent: 10px;
+}
+
+.user_infos_body .msg{
+	font-size: 15px;
+	color: #515A5A;
+}
+
+.msg span{
+	font-size: 18px;
+	color: #f40;
+}
+
+.userPic{
+	width: 80%;
+	height: 80px;
+	margin: 20px 0 0 0;
+	/*background: blue;*/
+	font: 13px/1.5 tahoma,arial,\5b8b\4f53,sans-serif;
+}
+
+.pic{
+	height: 70px;
+	width: 70px;
+	margin:5px 0 5px 0;
+	border: 2px solid #7F8C8D;
+	/*background: red;*/
+	border-radius: 2px;
+}
+
+
+.userPic input{
+	width: 50%;
+	height: 30px;
+	margin: 25px 20px 0;
+	/*background: green;*/
+}
+
+
+.userName,.mailbox{
+	width: 80%;
+	height: 50px;
+	margin: 20px 0 0 0;
+	font: 13px/1.5 tahoma,arial,\5b8b\4f53,sans-serif;
+}
+
+.userPic text,.userName text,.sex text,.mailbox text{
+	width: 100px;
+	height: 80%;
+	line-height: 30px;
+}
+
+.userName input,.mailbox input{
+	height: 30px;
+	width: 300px;
+/*	margin:10px 0 5px 20px;*/
+}
+
+.sex{
+	width: 80%;
+	height: 50px;
+	line-height: 50px;
+	/*margin: 20px 0 0 0;*/
+	font: 13px/1.5 tahoma,arial,\5b8b\4f53,sans-serif;
+}
+
+.user_infos_body .sex .sex_class{
+	line-height: 50px;
+}
+
+.sex input{
+	/*margin-left: 20px;*/
+	position: relative;
+	top: 10px;
+	height: 30px;
+	margin-right: 5px;
+	line-height: 40px;
+}
+
+.save{
+	margin-left: 60px;
+	margin-top: 10px;
+	background: #f40;
+	color: #fff;
+	height: 30px;
+	width: 80px;
+	cursor: pointer;
+}
+
+.save:hover{
+	background: #D35400;
+}

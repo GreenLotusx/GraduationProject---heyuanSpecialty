@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>用户用心</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/user.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/template-web.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<script type="text/javascript" src="js/user.js"></script>
+</head>
+<body>
+	<div class="container">
+
+		<div class="header">
+			<div class="headerBox"></div>
+			<div class="searchContainer">
+				<div class="logo fl">
+					<a href="index.html"></a>
+				</div>
+				<div class="search fr">
+					<div class="searchIcon fl">
+						<img src="images/icon/search.png">
+					</div>
+
+					<div class="searchBody fl">
+						<form>
+							<input type="text" name="keyword" class="input fl" placeholder="请输入要搜索的特产名称">
+							<input type="submit" name="" class="submit fr" value="搜特产" id="search">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main">
+			<div class="title">
+					<div class="userText fl">个人中心</div>&nbsp;&nbsp;&nbsp;&nbsp;|
+			</div>
+
+			<div class="body">
+				<div class="body_left fl">
+					<img src="" alt="">
+					<div class="body_left_bootom">账号管理
+						<ul>
+							<li class="select">·个人资料</li>
+							<li>·收货地址</li>
+							<li>·安全设置</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="body_right_user_infos fr body_right " data-id="1">
+					<div class="user_infos_title">
+						<div>个人资料</div>
+					</div>
+					
+					<form>
+					
+						<div class="user_infos_body">
+							<div class="msg">亲爱的&nbsp;&nbsp;<span></span>&nbsp;&nbsp;，填写真实资料，使得本站更好的服务于你哦。
+							</div>
+
+							<div class="userPic">
+								<text class="fl">当前头像:</text>
+								<img src="" class="pic fl">
+								<input type="file" name="" id="picFile">
+							</div>
+
+							<div class="userName">
+								<text class="fl">用户昵称:</text>
+								<input type="text" value="" maxlength="10" name="userName">
+							</div>
+
+							<div class="mailbox">
+								<text class="fl">邮箱:</text>
+								<input type="text" value="" maxlength="24" name="mailBox">
+							</div>
+
+
+							<div class="sex">
+								<text class="sex_class fl">性别:</text>
+								<input type="radio" value="male" name="sex">男</input>&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="radio" value="female" name="sex">女</input>
+							</div>
+						</div>
+
+						<input type="submit" value="保存" class="save" id="infosSave">
+
+					</form>
+				</div>
+
+				<div class="body_right_user_address fr body_right invisible" data-id="2">
+						<div class="user_infos_title">
+							<div>收货地址</div>
+						</div>
+						<form>
+							<div class="user_infos_body address_body">
+								<div class="now_address">
+									<div class="nowAddressTitle">当前地址：</div>
+									<div class="nowAddressBody"></div>
+								</div>
+
+								<div class="update_address">
+									更新地址
+									<div class="update_address_body">
+											<div class="form_group">
+												<label>收件人：</label>
+												<input type="text" name="addressee">
+											</div>
+
+											<div class="form_group2">
+												<label>详细信息：</label>
+												<textarea class="address_text" name="address"></textarea>
+											</div>
+
+											<div class="form_group">
+												<label>手机号码：</label>
+												<input type="text" name="phoneNumber">
+											</div>
+
+											<div class="form_group">
+												<label>邮政编码：</label>
+												<input type="text" name="zipCode">
+											</div>
+									</div>
+								</div>
+							</div>
+							<input type="submit" value="保存" class="save" id="addressSave">
+						</form>
+				</div>
+
+				<div class="body_right_user_psd fr body_right invisible" data-id="3">
+					<div class="user_infos_title">
+						<div>安全设置</div>
+					</div>
+
+					<form>
+						
+						<div class="user_infos_body">
+							<div class="update_address">
+								更改登陆密码
+								<div class="update_address_body">
+									<div class="form_group"></div>
+
+									<div class="form_group">
+										<label>原密码：</label>
+										<input type="password" name="ordPsd">
+									</div>
+
+									<div class="form_group">
+										<label>新密码：</label>
+										<input type="password" name="newPsd">
+									</div>
+									<input type="submit" value="保存" class="save" id="psdSave">
+								</div>
+							</div>
+
+						</div>
+
+					</form>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="foot_link">
+				<a href="#">关于我们</a>
+				<span>|</span>
+				<a href="#">联系我们</a>
+				<span>|</span>
+				<a href="#">招聘人才</a>
+				<span>|</span>
+				<a href="#">友情链接</a>		
+			</div>
+			<p>CopyRight © 2016 16嵌入式2毕业设计 All Rights Reserved</p>
+			<p>电话：010-****888    粤ICP备*******8号</p>
+		</div>
+	</div>
+
+<script type="text/html" id="notLogin">
+	<div class="headConnent">
+		<div class="wecome fl">欢迎来到河源特产网！</div>
+		<div class="infos fr">
+			<a class="index fl" href="./index.html">特产网首页</a>
+			<div class="login fl">
+				请&nbsp;&nbsp;
+				<span><a href="./login.html">登陆</a></span>
+				&nbsp;&nbsp;或&nbsp;&nbsp;
+				<span><a href="./register.html">注册</a></span>
+			</div>
+			&nbsp;&nbsp;
+			<a href="login.html">个人中心</a>
+			&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="login.html">我的购物车</a>
+			&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="login.html">我的订单</a>
+		</div>
+	</div>
+</script>
+
+<script type="text/html" id="alreadyLogin">
+			<div class="headConnent">
+				<div class="wecome fl">欢迎来到河源特产网！</div>
+				<div class="infos fr">
+					<a class="index fl" href="./index.html">特产网首页</a>
+					<div class="login fl">
+						欢迎你:&nbsp;&nbsp;<span><a href="./user.html"><%= name %></a></span>
+					</div>
+					<a href="#" id="logout" onclick="logout();">注销</a>
+					&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="user.html">个人中心</a>
+					&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="cart.html">我的购物车</a>
+					&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="order.html">我的订单</a>
+				</div>
+			</div>
+</script>
+
+
+</body>
+</html>

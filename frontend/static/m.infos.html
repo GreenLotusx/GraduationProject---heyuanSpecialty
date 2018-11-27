@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>订单详情</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/m.infos.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/template-web.js"></script>
+	<script type="text/javascript" src="js/m.infos.js"></script>
+</head>
+<body>
+	<div class="container">
+
+		<div class="buy" id="buy" onclick="buy();">立即购买</div>
+	</div>
+
+	<script type="text/html" id="infos">
+		
+		<div class="comPic">
+			<img src="{{data.img}}">
+		</div>
+		<div class="price">
+			<div class="comPrice fl">￥{{data.newprice}}</div>
+			<div class="comFreight fr">配送费:￥{{data.freight}}</div>
+		</div>
+
+		<div class="comTitle">{{data.title}}</div>
+
+		<div class="comInfos">
+			<div class="comText">商品详情</div>
+			<div class="coms">{{data.infos}}</div>
+		</div>
+
+	</script>
+</body>
+</html>

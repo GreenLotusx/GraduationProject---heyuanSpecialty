@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/cart.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/template-web.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<script type="text/javascript" src="js/cart.js"></script>
+</head>
+<body>
+	<div class="container">
+
+		<div class="header">
+			<div class="headerBox"></div>
+			<div class="searchContainer">
+				<div class="logo fl">
+					<a href="index.html"></a>
+				</div>
+				<div class="search fr">
+					<div class="searchIcon fl">
+						<img src="images/icon/search.png">
+					</div>
+
+					<div class="searchBody fl">
+						<form>
+							<input type="text" name="keyword" class="input fl" placeholder="请输入要搜索的特产名称">
+							<input type="submit" name="" class="submit fr" value="搜特产" id="search">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main">
+			<div class="title">
+				<div class="cartText fl">购物车</div>&nbsp;&nbsp;&nbsp;&nbsp;|
+				<a class="clearCart fr" href="javascript:;">清空购物车</a>
+			</div>
+			<div class="body">
+				<div class="titleBox">
+					<ul>
+						<li>选择</li>
+						<li>特产信息</li>
+						<li>规格</li>
+						<li>单价</li>
+						<li>数量</li>
+						<li>金额</li>
+						<li>操作</li>
+					</ul>
+				</div>
+				<div class="commodity">
+					<ul></ul>
+
+					<div class="total">
+						<div class="selectionTotal fl">
+							<input type="checkbox" name="" id="allSelect" checked="true">
+							<text>全选</text>
+						</div>
+						<div class="money_total fr">
+							<div class="selection fl">已选&nbsp;&nbsp;<span> </span>&nbsp;&nbsp;件特产</div>
+							<button class="payment fr">去提交</button>
+							<div class="moneyTotal fr">&nbsp;&nbsp;&nbsp;&nbsp;合计(不含运费):&nbsp;&nbsp;<span></span></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="foot_link">
+				<a href="#">关于我们</a>
+				<span>|</span>
+				<a href="#">联系我们</a>
+				<span>|</span>
+				<a href="#">招聘人才</a>
+				<span>|</span>
+				<a href="#">友情链接</a>		
+			</div>
+			<p>CopyRight © 2016 16嵌入式2毕业设计 All Rights Reserved</p>
+			<p>电话：010-****888    粤ICP备*******8号</p>
+		</div>
+	</div>
+
+
+<script type="text/html" id="notLogin">
+	<div class="headConnent">
+		<div class="wecome fl">欢迎来到河源特产网！</div>
+		<div class="infos fr">
+			<a class="index fl" href="./index.html">特产网首页</a>
+			<div class="login fl">
+				请&nbsp;&nbsp;
+				<span><a href="./login.html">登陆</a></span>
+				&nbsp;&nbsp;或&nbsp;&nbsp;
+				<span><a href="./register.html">注册</a></span>
+			</div>
+			&nbsp;&nbsp;
+			<a href="login.html">个人中心</a>
+			&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="login.html">我的购物车</a>
+			&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="login.html">我的订单</a>
+		</div>
+	</div>
+</script>
+
+<script type="text/html" id="alreadyLogin">
+			<div class="headConnent">
+				<div class="wecome fl">欢迎来到河源特产网！</div>
+				<div class="infos fr">
+					<a class="index fl" href="./index.html">特产网首页</a>
+					<div class="login fl">
+						欢迎你:&nbsp;&nbsp;<span><a href="./user.html"><%= name %></a></span>
+					</div>
+					<a href="#" id="logout" onclick="logout();">注销</a>
+					&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="user.html">个人中心</a>
+					&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="cart.html">我的购物车</a>
+					&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="order.html">我的订单</a>
+				</div>
+			</div>
+</script>
+
+<script type="text/html" id="cartList">
+	{{each cartList item index}}
+		<li>
+			<div class="choice">
+				<input type="checkbox" name="select" value="{{item.id}}" class="select" checked="true">
+			</div>
+			<div class="infos">
+				<img src="{{item.img}}" class="fl">
+				<div class="commodityTitle fl">{{item.title}}</div>
+			</div>
+			<div class="specifications">
+				{{item.specifications}}
+			</div>
+
+			<div class="price">
+				<div class="ord"><S>{{item.oprice}}</S></div>
+				<div class="new">{{item.nprice}}</div>
+			</div>
+			<div class="number">
+
+				<div class="num_add">
+					<a href="javascript:;" class="minus fl">-</a>
+					<input type="number" class="num_show fl" value="{{item.num}}" max="999" min="1">	
+					<a href="javascript:;" class="add fl">+</a>	
+				</div>
+			</div>
+			<div class="money clearfix">{{item.sumprice}}</div>
+			<div class="operation"><a href="#" data-id="{{item.id}}">删除</a></div>
+		</li>
+	{{/each}}
+</script>
+
+</body>
+</html>
+
+<!-- 				<div class="box">
+					<button>-</button>
+					<input type="number" name="" value="{{item.num}}">
+					<button>+</button>
+				</div> -->

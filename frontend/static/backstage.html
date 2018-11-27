@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>后台管理</title>
+	<link rel="stylesheet" type="text/css" href="css/backstage.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="static/js/public.js"></script>
+	<script type="text/javascript" src="js/backstage.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="top">
+			<div class="wecome">登陆信息</div>
+		</div>
+		
+		<div class="header">
+			<div class="logo">后台管理</div>
+		</div>
+
+ 
+		<div class="main">
+			<div class="subject">
+				<div class="sub_title">
+					<div>特产数据维护</div>
+				</div>
+				<div class="sub_body">
+					<div class="operation">
+						<div class="modify">
+							<ul>
+								<li>
+									<div>
+										<a href="/changedata.html?cid=0">新增</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<form>
+							<div class="query">
+								<input type="text" class = 'input' name="keyword" placeholder="输入商品名称查询">
+								<input type="submit" class="submit" id="queryLikes">查询</input>
+							</div>
+						</form>
+					</div>
+
+
+					<div class="data_list_title">
+						<ul>
+							<li>图片</li>
+							<li>标题</li>
+							<li>运费</li>
+							<li>原价</li>
+							<li>现价</li>
+							<li>销量</li>
+							<li>规格</li>
+							<li>分类</li>
+							<li>操作</li>
+						</ul>
+					</div>
+
+					<div class="data_list_body"></div>
+				</div>
+
+			<div class="pagenation">
+				<a href="#" id="head"><<</a>
+				<a href="#" id="last"><</a>
+				<a href="#" id="next">></a>
+				<a href="#" id="foot">>>></a>
+			</div>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

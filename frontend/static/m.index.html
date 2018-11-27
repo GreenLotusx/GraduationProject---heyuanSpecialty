@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>首页-移动端</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/m.index.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/template-web.js"></script>
+	<script type="text/javascript" src="js/slides.js"></script>
+	<script type="text/javascript" src="js/m.index.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="slide_body">
+			<div class="tempWrap">
+				<ul class="picSlides"></ul>
+				<ul class="circle fl"></ul>
+			</div>
+		</div>
+
+		<div class="classBtn">
+			
+			<ul>
+				<li>
+					<a href="m.class.html?clsid=1">
+						<img src="images/icon/iconclass1.png">
+						<div>零食</div>
+					</a>
+
+				</li>
+				<li>
+					<a href="m.class.html?clsid=2">
+						<img src="images/icon/iconclass2.png">
+						<div>水果</div>
+					</a>
+				</li>
+				<li>
+					<a href="m.class.html?clsid=3">
+						<img src="images/icon/iconclass3.png">
+						<div>小吃</div>
+					</a>
+				</li>
+				<li>
+					<a href="m.class.html?clsid=4">
+						<img src="images/icon/iconclass4.png">
+						<div>手工</div>
+					</a>
+				</li>
+				<li>
+					<a href="m.class.html?clsid=5">
+						<img src="images/icon/iconclass5.png">
+						<div>其他</div>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+
+		<div class="main">
+			<ul></ul>
+		</div>
+
+	</div>
+
+
+
+<script type="text/html" id="slides">
+	
+	{{each excellentData item index}}
+	    	<li>
+				<a href='m.infos.html?cid={{item.id}}'>
+					<img src="{{ item.img }}">
+				</a>
+			</li>
+	{{/each}}
+</script>
+
+
+<script type="text/html" id="data">
+	
+	{{each data item index}}
+	    	<li data-id="{{item.id}}">
+	    		<img src="{{item.img}}">
+	    		<div class="title">{{item.title}}</div>
+	    		<div class="price">￥{{item.price}}/{{item.specifications}}</div>
+			</li>
+	{{/each}}
+</script>
+
+
+</body>
+</html> 

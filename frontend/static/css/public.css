@@ -1,0 +1,174 @@
+html,body{
+	min-height: 100%;
+	width: 100%;
+    font-family: 'Microsoft Yahei';
+    font-size: 12px;
+    background: 
+}
+
+.container{
+	height: 100%;
+	width: 100%;
+	min-width: 1200px;
+	/*min-height: 1000px;*/
+	background: #fff;
+	/*background: green;*/
+}
+
+.main{
+	width: 1200px;
+	margin:0 auto;
+}
+
+.header{
+	height: 129px;
+	margin-bottom: 10px;
+	width: 100%;
+	background: #fff;
+}
+
+.headerBox{
+	width: 100%;
+	height: 29px;
+	background: #f7f7f7;
+}
+
+.headConnent{
+	width: 1200px;
+	/*min-width: 1200px;*/
+	height: 29px;
+	/*background: blue;*/
+    background-color: #f7f7f7;
+	margin: 0 auto;
+	font-size: 13px;
+	line-height: 28px;
+}
+
+.wecome{
+	width: 200px;
+	height: 100%;
+	/*background: red;*/
+	color: #839192;
+}
+
+.infos{
+	width: 550px;
+	height: 100%;
+	text-align: right;
+	/*background: yellow;*/
+}
+
+.index{
+	height: 100%;
+	width: 100px;
+	color: #839192;
+	text-align: left;
+}
+
+.infos a:hover{
+	color: #27AE60;
+}
+
+.infos a{
+	color: #839192;
+}
+
+.login a{
+	color: #E67E22;
+}
+
+.login a:hover{
+	color: #F5B041;
+}
+
+.login{
+	line-height: 28px;
+}
+
+.searchContainer{
+	height: 100px;
+	width: 1200px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+.logo{
+	height: 80px;
+	width: 150px;
+	/*background: red;*/
+	background:url(../images/icon/logo.png) no-repeat;
+	background-size: 150px 80px;
+	margin: 10px;
+}
+
+.logo a{
+	display: inline-block;
+	height: 80px;
+	width: 150px;
+}
+
+.search{
+	height: 35px;
+	/*width: 600px;*/
+	/*background: blue;*/
+	margin:28px 0 0 150px;
+	border:2px solid #27AE60;
+}
+
+.searchIcon{
+	width: 38px;
+	height: 100%;
+	/*background: red;*/
+}
+
+.searchIcon img{
+	width: 20px;
+	height: 20px;
+	margin:6.5px 0 0 8px;
+}
+
+.searchBody{
+	height: 100%;
+	width: 560px;
+}
+
+.searchBody form{
+	height: 99%;
+	width: 100%;
+}
+
+.input{
+	height: 100%;
+	width: 460px;
+	/*background: yellow;*/
+	border:0;
+	outline:none;
+}
+
+.submit{
+	outline:none;
+	width: 97px;
+	height: 100%;
+	background: #27AE60;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	margin-left: 1px;
+}
+
+/* 页面底部样式 */
+.footer{
+	height: 80px;
+	/*background: blue;*/
+	border-top:1px solid #CCD1D1;
+	margin:50px 0;
+	font-family: 'Microsoft Yahei';
+    font-size: 12px;
+    color: #666;
+}
+
+.foot_link{text-align:center;margin-top:30px;}
+.foot_link a,.foot_link span{color:#4e4e4e;}
+.foot_link a:hover{color:#ff8800}
+.foot_link span{padding:0 10px}
+.footer p{text-align:center; margin-top:10px;}

@@ -1,0 +1,161 @@
+html,body{
+	min-height: 100%;
+	width: 100%;
+}
+
+.container{
+	height: 100%;
+	width: 100%;
+	min-width: 1200px;
+	/*min-height: 1000px;*/
+	background: #F2F3F4;
+	/*background: green;*/
+}
+
+
+
+.main{
+	width: 1200px;
+    margin: 0 auto;
+   	margin:30px auto;
+}
+
+.title{
+	width: 100%;
+	height: 43px;
+	/*background: blue;*/
+	font-size: 16px;
+	border-bottom: 2px solid #27AE60;
+}
+
+.title_text{
+	height: 100%;
+	width: 1200px;
+	margin:0 auto;
+}
+
+.text{
+	height: 100%;
+	width: 200px;
+	color: #fff;
+	background: #1E8449;
+	text-align: center;
+	line-height: 43px;
+}
+
+.nav{
+	height: 100%;
+	width: 800px;
+	/*background: red;*/
+	margin-left: 20px;
+	text-align: left;
+	line-height: 43px;
+	font-size: 13px;
+	color: #196F3D;
+}
+
+.nav a{
+	color: #196F3D;
+}
+
+.nav a:hover{
+	color: #f40;
+}
+
+.main .commodityBox{
+	width: 1200px;
+	background: #fff;
+	margin:0 auto;
+	font-size: 0;
+}
+
+.commodityBox ul{
+	height: 100%;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.commodityBox li{
+	display: inline-block;
+	width: 236px;
+	height: 360px;
+	border:2px solid #F2F3F4;
+	cursor: pointer;
+}
+
+.commodityBox li:hover{
+	border:2px solid #1E8449;
+}
+
+.commodityBox img{
+	height: 220px;
+	width: 220px;
+	margin:10px 8px 0 8px;
+}
+
+.price{
+	height: 30px;
+	width: 220px;
+	margin:0px 8px 0 8px;
+	font-size: 13px;
+	color: #C40000;
+	/*background: red;*/
+}
+
+.price span{
+	font-size: 20px;
+}
+
+.commodityTitle{
+	height: 50px;
+	width: 220px;
+	margin:0px 8px 0 8px;
+	/*background: red;*/
+	font-size: 12px;
+	text-align: center;
+	color: #606060;
+}
+
+.cartBox{
+	height: 35px;
+	width: 220px;
+	margin:0px 8px 0 8px;
+	border: 1px solid #ededed;
+    /*border-left: 1px solid #ededed;*/
+	/*background: blue;*/
+}
+
+.sales{
+	height: 100%;
+	width: 40%;
+	/*background: green;*/
+	color: #606060;
+	font-size: 13px;
+	line-height: 35px;
+	text-align: center;
+	border-right: 1px solid #ededed;
+}
+
+.sales span{
+	color: green;
+	font-size: 14px;
+}
+
+.cart{
+	height: 100%;
+	width: 59%;
+	/*background: red;*/
+	background-color: #fff;
+	background: url(../images/icon/shop_cart.png) 5px 5px no-repeat;
+	color: #606060;
+	padding:0;
+	border:0;
+}
+
+
+/* 分页样式 */
+
+.pagenation{height:32px;text-align:center;font-size:0;margin:30px auto;}
+.pagenation a{display:inline-block;border:1px solid #d2d2d2;background-color:#f8f6f7;font-size:12px;padding:7px 10px;color:#666;margin:5px}
+
+.pagenation .active{background-color:#fff;color:#43a200}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>河源特产网首页</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/template-web.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<script type="text/javascript" src="js/slides.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<div class="container">
+	
+		<div class="header">
+			<div class="headerBox"></div>
+			<div class="searchContainer">
+				<div class="logo fl">
+					<a href="index.html"></a>
+				</div>
+				<div class="search fr">
+					<div class="searchIcon fl">
+						<img src="images/icon/search.png">
+					</div>
+
+					<div class="searchBody fl">
+						<form>
+							<input type="text" name="keyword" class="input fl" placeholder="请输入要搜索的特产名称">
+							<input type="submit" name="" class="submit fr" value="搜特产" id="search">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main">
+			<div class="class_slide">
+				<div class="class_head">
+					<div class="class fl">全部特产分类</div>
+					<div class="nav fl">
+						<a href="./index.html">首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<a href="javascript:;" class="apkdown">手机特产</a>
+						<img src="images/icon/apkdown.png" class="apkdownimg invisible">
+					</div>
+				</div>
+				<div class="class_slide_body">
+					<div class="class_body fl">
+						<ul>
+							<li><a href="class.html?clsid=1">零食类</a></li>
+							<li><a href="class.html?clsid=2">水果类</a></li>
+							<li><a href="class.html?clsid=3">小吃类</a></li>
+							<li><a href="class.html?clsid=4">手工类</a></li>
+							<li><a href="class.html?clsid=5">其他类</a></li>
+						</ul>
+					</div>
+
+
+
+					<div class="slide_body fl">
+						<div class="tempWrap">
+							<ul class="picSlides"></ul>
+							<div class="previous"></div>
+							<div class="next"></div>
+							<ul class="circle fl"></ul>
+						</div>
+					</div>
+
+
+
+					<div class="hot fl">
+					</div>
+				</div>
+			</div>
+
+			<div class="class_item" data-id="0">
+				<div class="title">
+					<text>零食类</text>
+					<a href="class.html?clsid=1">查看更多>></a>
+				</div>
+				<div class="class_item_body">
+					<img src="images/icon/class1.png">
+					<ul></ul>
+				</div>
+			</div>
+
+			<div class="class_item" data-id="1">
+				<div class="title">
+					<text>水果类</text>
+					<a href="class.html?clsid=2">查看更多>></a>
+				</div>
+				<div class="class_item_body">
+					<img src="images/icon/class2.png">
+					<ul></ul>
+				</div>
+			</div>
+
+			<div class="class_item" data-id="2">
+				<div class="title">
+					<text>小吃类</text>
+					<a href="class.html?clsid=3">查看更多>></a>
+				</div>
+				<div class="class_item_body">
+					<img src="images/icon/class3.png">
+					<ul></ul>
+				</div>
+			</div>
+
+			<div class="class_item" data-id="3">
+				<div class="title">
+					<text>手工类</text>
+					<a href="class.html?clsid=4">查看更多>></a>
+				</div>
+				<div class="class_item_body">
+					<img src="images/icon/class4.png">
+					<ul></ul>
+				</div>
+			</div>
+
+			<div class="class_item" data-id="4">
+				<div class="title">
+					<text>其他类</text>
+					<a href="class.html?clsid=5">查看更多>></a>
+				</div>
+				<div class="class_item_body">
+					<img src="images/icon/class5.png">
+					<ul></ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="foot_link">
+				<a href="#">关于我们</a>
+				<span>|</span>
+				<a href="#">联系我们</a>
+				<span>|</span>
+				<a href="#">招聘人才</a>
+				<span>|</span>
+				<a href="#">友情链接</a>		
+			</div>
+			<p>CopyRight © 2016 16嵌入式2毕业设计 All Rights Reserved</p>
+			<p>电话：010-****888    粤ICP备*******8号</p>
+		</div>
+	</div>
+
+
+
+
+<script type="text/html" id="notLogin">
+	<div class="headConnent">
+		<div class="wecome fl">欢迎来到河源特产网！</div>
+		<div class="infos fr">
+			<a class="index fl" href="./index.html">特产网首页</a>
+			<div class="login fl">
+				请&nbsp;&nbsp;
+				<span><a href="./login.html">登陆</a></span>
+				&nbsp;&nbsp;或&nbsp;&nbsp;
+				<span><a href="./register.html">注册</a></span>
+			</div>
+			&nbsp;&nbsp;
+			<a href="login.html">个人中心</a>
+			&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="login.html">我的购物车</a>
+			&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="login.html">我的订单</a>
+		</div>
+	</div>
+</script>
+
+<script type="text/html" id="alreadyLogin">
+			<div class="headConnent">
+				<div class="wecome fl">欢迎来到河源特产网！</div>
+				<div class="infos fr">
+					<a class="index fl" href="./index.html">特产网首页</a>
+					<div class="login fl">
+						欢迎你:&nbsp;&nbsp;<span><a href="./user.html"><%= name %></a></span>
+					</div>
+					<a href="#" id="logout" onclick="logout();">注销</a>
+					&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="user.html">个人中心</a>
+					&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="cart.html">我的购物车</a>
+					&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="order.html">我的订单</a>
+				</div>
+			</div>
+</script>
+
+
+<script type="text/html" id="slides">
+	
+	{{each excellentData item index}}
+	    	<li>
+				<a href='infos.html?cid={{item.id}}'>
+					<img src="{{ item.img }}">
+				</a>
+			</li>
+	{{/each}}
+</script>
+
+<script type="text/html" id="hot">
+	{{each hot item index}}
+		<div>
+			<a href='infos.html?cid={{item.id}}'>
+				<img src="{{item.img}}">
+			</a>
+		</div>
+	{{/each}}
+</script>
+
+</body>
+</html>

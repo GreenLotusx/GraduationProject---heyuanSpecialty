@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>特产修改</title>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/changedata.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <script type="text/javascript" src="js/changedata.js"></script>
+</head>
+<body>
+	<div class="connent">
+		<div class="main">
+			<form data-type='pic'>
+
+                <div class="header">
+                  <h1>特产新增或修改</h1>
+                </div>
+                
+                <div class="contentForm fl">
+                  <div class="title">
+                      <span>特产标题</span>
+                          <input class='titleinput' type="text" name="title" placeholder="输入次数限在20以内" maxlength="20" autocomplete="off">
+                  </div>
+                  
+                  <div class="infos">
+                      <span>特产描述</span>
+                      <textarea name="infos" placeholder="请输入特产描述" value="1" maxlength="500"></textarea>
+                  </div>
+
+                  <div class="price">
+                    <span>原价</span>
+                    <input type="number" name="ordprice" value="0" id="ordpriceinput">
+                    <span id="newprice">现价</span>
+                    <input type="number" name="newprice" id="newpriceinput">
+                    <span id="freight">运费</span>
+                    <input type="number" name="freight" value="0" id="freightinput">
+                  </div>
+
+
+                  <div class="sales">
+                      <span>热销特产</span>
+                      <input type="checkbox" name="hot" value="0" id="hot">
+                      <span>优质特产</span>
+                      <input type="checkbox" name="excellent" value="0" id="excellent">
+                      <span>规格</span>
+                      <input type="text" name="specifications" id="specifications" value="">
+                  </div>
+
+                  <div class="pic_class">
+                      <span>特产分类</span>
+                      <select name="picClass">
+                            <option value ="1">零食类</option>
+                            <option value ="2">水果类</option>
+                            <option value="3">小吃类</option>
+                            <option value="4">手工类</option>
+                            <option value ="5">其他类</option>
+                      </select>
+                  </div>
+
+                  <div class="pic_file">
+                      <span>上传文件</span>
+                      <input type="file" name="picFile" id='picFile' accept="image/png,image/jpg,image/jpeg">
+                  </div>
+
+                  <div class="preview">
+                    <span>特产预览</span>
+                        <img src="" class="previewImg" id="pic">
+                  </div>
+
+        <div style="width: 100%;height: 60px;">
+          <input class="submit" type="submit" name="" value="提交">
+        </div>
+                </div>
+
+                <div class="contentText fr">
+                  &nbsp;&nbsp;&nbsp;特产上传须知：
+                  <ul>
+                    <li>1、数据必须进行完整填写</li>
+                    <li>2、图片格式指定jpg、jpeg、png</li>
+                    <li>3、图片大小不得大于5MB</li>
+                    <li>4、不能上传不适合公众浏览的内容</li>
+                    <li>5、不能上传内容低劣内容</li>
+                    <li>6、不得涉及政治、暴力、色情</li>
+                    <li>7、所有涉及金额数值均以元为单位</li>
+                    <li>8、特产标题不能超过20字</li>
+                    <li>9、特产描述不能超过500字</li>
+                  </ul>
+                </div>
+				<br>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

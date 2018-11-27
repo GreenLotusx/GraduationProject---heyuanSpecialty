@@ -1,0 +1,91 @@
+.container{
+	width: 100%;
+	min-height: 100%;
+	background: #E5E8E8;
+}
+
+.comPic{
+	height: 350px;
+	width: 100%;
+	/*background: red;*/
+}
+
+.comPic img{
+	height: 100%;
+	width: 100%;
+}
+
+.price{
+	height: 50px;
+	width: 100%;
+	background-color: #fff;
+	color: #717D7E;
+}
+
+.comPrice{
+	width: 56%;
+	padding-left: 2%;
+	padding-right: 2%;
+	height: 50px;
+	background-color: #fff;
+	font-size: 20px;
+	color: red;
+	line-height: 50px;
+}
+
+.comFreight{
+	width: 30%;
+	height: 50px;
+	font-size: 13px;
+	line-height: 50px;
+	text-align: center;
+	/*background-color: red;*/
+}
+
+.comTitle{
+	width: 93%;
+	padding-left: 3%;
+	padding-right: 4%;
+	font-weight: bold;
+	height: 30px;
+	background-color: #fff;
+	font-size: 14px;
+	border-bottom: 10px solid #E5E8E8;
+}
+
+.comInfos{
+	width: 100%;
+	background-color: #fff;
+}
+
+.comInfos .comText{
+	width: 96%;
+	height: 36px;
+	line-height: 35px;
+	font-size: 13px;
+	margin:0 auto;
+	color: #717D7E;
+	border-bottom: 1px solid #E5E8E8;
+}
+
+.coms{
+	width: 94%;
+	padding: 1%;
+	margin:0 auto;
+	font-size: 12px;
+	color: #717D7E;
+	background-color: #F2F4F4;
+	margin-top: 5px;
+	margin-bottom: 70px;
+}
+
+.buy{
+	position: fixed;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	line-height: 50px;
+	background-color: red;
+}
