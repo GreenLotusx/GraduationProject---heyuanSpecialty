@@ -20,7 +20,7 @@
 ## Instructions
 + Before use, the environment must depend on correct installation and configuration. See the above steps for specific installation.
 
-+ Before running the project, we must use MySQL client to build database, tables and so on. Specific SQL statements are under **project/backend/db/db.sql**. You can use the command **source project/backend/db/db.sql** on the MySQL client; you can perform database building and table building operations. The project folder is your project folder.
++ Before running the project, we must use MySQL client to build database, tables and so on. Specific SQL statements are under **project/backend/db/db.sql**. You can use the command **source project/backend/db/db.sql** on the MySQL client; you can perform database building and table building operations. 
 
 + Change part of the configuration, which is modified according to your own needs. The configuration file is located in **project/backend/app/config.py**.
 
