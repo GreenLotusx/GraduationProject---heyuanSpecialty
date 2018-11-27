@@ -1,2 +1,2 @@
-#Graduation Design - Heyuan Special Products
+Graduation Design - Heyuan Special Products
 
