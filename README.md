@@ -14,8 +14,8 @@
 	Pillow    (Pillow 5.3.0)
 	redis     (redis 2.10.6)
 	
-	# Among them, except for Python 3, there is no mandatory dependency on the version.
-	# Dependent libraries can be installed directly through pip, such as pip3 install Tornado.
+	#Among them, except for Python 3, there is no mandatory dependency on the version.
+	#Dependent libraries can be installed directly through pip, such as pip3 install Tornado.
 	
 ## Instructions
 + Before use, the environment must depend on correct installation and configuration. See the above steps for specific installation.
