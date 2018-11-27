@@ -36,9 +36,15 @@
 ## Effect Picture
 ![](https://github.com/GreenLotusx/GraduationProject---heyuanSpecialty/blob/master/frontend/static/images/projectImg/2018-11-27%2012-55-48%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)  
 
+![](https://github.com/GreenLotusx/GraduationProject---heyuanSpecialty/blob/master/frontend/static/images/projectImg/2018-11-27%2012-57-43%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)  
+
 ![](https://github.com/GreenLotusx/GraduationProject---heyuanSpecialty/blob/master/frontend/static/images/projectImg/2018-11-27%2012-56-16%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)  
 
 ![](https://github.com/GreenLotusx/GraduationProject---heyuanSpecialty/blob/master/frontend/static/images/projectImg/2018-11-27%2012-56-40%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)  
 
-![](https://github.com/GreenLotusx/GraduationProject---heyuanSpecialty/blob/master/frontend/static/images/projectImg/2018-11-27%2012-57-43%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)  
+![](https://github.com/GreenLotusx/GraduationProject---heyuanSpecialty/blob/master/frontend/static/images/projectImg/2018-11-27%2012-56-59%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)  
+
+![](https://github.com/GreenLotusx/GraduationProject---heyuanSpecialty/blob/master/frontend/static/images/projectImg/2018-11-27%2012-57-16%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
+
+
 
