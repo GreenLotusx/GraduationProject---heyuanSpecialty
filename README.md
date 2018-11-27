@@ -1,7 +1,10 @@
 # Graduation Design - Heyuan Special Products
 
 ## Simple Description
-	This is a graduation project. It is a simple e-commerce website. It realizes the basic functions of registration, login, commodity purchase, order processing, analog payment, shopping cart and background to add or delete or modify commodity information. Its back end is provided by Tornado, Python's web framework.
+	This is a graduation project. It is a simple e-commerce website. 
+	It realizes the basic functions of registration，
+	login, commodity purchase, order processing, 	analog payment, shopping cart and background to add or delete or modify commodity information.
+	Its back end is provided by Tornado, Python's web framework.
 	
 ## Environmental Dependence
 	Python3.x (Python 3.6.4)
@@ -27,10 +30,10 @@
 
 + If you can successfully open the page, you can login through the default account root, administrator users will jump directly to the background management interface, and then you can operate the commodity data.
 
-*The above project folder is your project folder*.
-*The default password for root account is **123456***.
+* The above project folder is your project folder*.
+* The default password for root account is **123456***.
 
-##Effect Picture
+## Effect Picture
 ![](https://github.com/GreenLotusx/GraduationProject---heyuanSpecialty/blob/master/frontend/static/images/projectImg/2018-11-27%2012-55-48%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
 
 ![](https://github.com/GreenLotusx/GraduationProject---heyuanSpecialty/blob/master/frontend/static/images/projectImg/2018-11-27%2012-56-16%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png) 
