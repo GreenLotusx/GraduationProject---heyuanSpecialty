@@ -22,6 +22,8 @@
 
 + Before running the project, we must use MySQL client to build database, tables and so on. Specific SQL statements are under **project/backend/db/db.sql**. You can use the command **source project/backend/db/db.sql** on the MySQL client; you can perform database building and table building operations. The project folder is your project folder.
 
++ Change part of the configuration, which is modified according to your own needs. The configuration file is located in **project/backend/app/config.py**.
+
 + Before running, make sure that port **8000** is not occupied.
 
 + Under project/backend/folder, the terminal executes **python 3 server.py-port=8000**.
