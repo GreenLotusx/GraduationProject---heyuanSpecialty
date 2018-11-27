@@ -1,4 +1,4 @@
-#Graduation Design - Heyuan Special Products
+=Graduation Design - Heyuan Special Products
 
 ##Simple Description
 	This is a graduation project. It is a simple e-commerce website. It realizes the basic functions of registration, login, commodity purchase, order processing, analog payment, shopping cart and background to add or delete or modify commodity information. Its back end is provided by Tornado, Python's web framework.
