@@ -2,8 +2,8 @@
 
 ## Simple Description
 	This is a graduation project. It is a simple e-commerce website. 
-	It realizes the basic functions of registration，
-	login, commodity purchase, order processing, analog payment, shopping cart and background to add or delete or modify commodity information.
+	It realizes the basic functions of registration,login, commodity purchase,
+	order processing, analog payment, shopping cart and background to add or delete or modify commodity information.
 	Its back end is provided by Tornado, Python's web framework.
 	
 ## Environmental Dependence
@@ -14,8 +14,8 @@
 	Pillow    (Pillow 5.3.0)
 	redis     (redis 2.10.6)
 	
-	#Among them, except for Python 3, there is no mandatory dependency on the version.
-	#Dependent libraries can be installed directly through pip, such as pip3 install Tornado.
+	Among them, except for Python 3, there is no mandatory dependency on the version.
+	Dependent libraries can be installed directly through pip, such as pip3 install Tornado.
 	
 ## Instructions
 + Before use, the environment must depend on correct installation and configuration. See the above steps for specific installation.
@@ -30,19 +30,15 @@
 
 + If you can successfully open the page, you can login through the default account root, administrator users will jump directly to the background management interface, and then you can operate the commodity data.
 
-*The above project folder is your project folder*.
-
+*The above project folder is your project folder*.  
 *The default password for root account is **123456***.
 
 ## Effect Picture
-![](https://github.com/GreenLotusx/GraduationProject---heyuanSpecialty/blob/master/frontend/static/images/projectImg/2018-11-27%2012-55-48%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
+![](https://github.com/GreenLotusx/GraduationProject---heyuanSpecialty/blob/master/frontend/static/images/projectImg/2018-11-27%2012-55-48%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)  
 
+![](https://github.com/GreenLotusx/GraduationProject---heyuanSpecialty/blob/master/frontend/static/images/projectImg/2018-11-27%2012-56-16%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)  
 
-![](https://github.com/GreenLotusx/GraduationProject---heyuanSpecialty/blob/master/frontend/static/images/projectImg/2018-11-27%2012-56-16%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png) 
+![](https://github.com/GreenLotusx/GraduationProject---heyuanSpecialty/blob/master/frontend/static/images/projectImg/2018-11-27%2012-56-40%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)  
 
-
-![](https://github.com/GreenLotusx/GraduationProject---heyuanSpecialty/blob/master/frontend/static/images/projectImg/2018-11-27%2012-56-40%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png) 
-
-
-![](https://github.com/GreenLotusx/GraduationProject---heyuanSpecialty/blob/master/frontend/static/images/projectImg/2018-11-27%2012-57-43%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png) 
+![](https://github.com/GreenLotusx/GraduationProject---heyuanSpecialty/blob/master/frontend/static/images/projectImg/2018-11-27%2012-57-43%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)  
 
