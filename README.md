@@ -1,9 +1,9 @@
-=Graduation Design - Heyuan Special Products
+# Graduation Design - Heyuan Special Products
 
-##Simple Description
+## Simple Description
 	This is a graduation project. It is a simple e-commerce website. It realizes the basic functions of registration, login, commodity purchase, order processing, analog payment, shopping cart and background to add or delete or modify commodity information. Its back end is provided by Tornado, Python's web framework.
 	
-##Environmental Dependence
+## Environmental Dependence
 	Python3.x (Python 3.6.4)
 	Tornado   (Tornado 5.1.1)
 	MySQL	  (Mysql 8.0.13)
@@ -11,10 +11,10 @@
 	Pillow    (Pillow 5.3.0)
 	redis     (redis 2.10.6)
 	
-	#Among them, except for Python 3, there is no mandatory dependency on the version.
-	#Dependent libraries can be installed directly through pip, such as pip3 install Tornado.
+	# Among them, except for Python 3, there is no mandatory dependency on the version.
+	# Dependent libraries can be installed directly through pip, such as pip3 install Tornado.
 	
-##Instructions
+## Instructions
 + Before use, the environment must depend on correct installation and configuration. See the above steps for specific installation.
 
 + Before running the project, we must use MySQL client to build database, tables and so on. Specific SQL statements are under **project/backend/db/db.sql**. You can use the command **source project/backend/db/db.sql** on the MySQL client; you can perform database building and table building operations. The project folder is your project folder.
